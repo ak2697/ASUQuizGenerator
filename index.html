@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASU Quiz Builder</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"> 
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.7.0/mammoth.browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.6.0/jszip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docx@8.5.0/build/index.umd.min.js"></script>
+  </head>
+
+<body>
+  <div id="navbar"> <img src="images/ASU_FultonEngineering_2_Horiz_RGB_White_600ppi.png" height="100px" width="auto"></div>
+
+  <div class="container">
+      <div id="title"> <h1><b>Quiz Builder Tool</b></h1></div>
+      <p id="description">The Learning and Teaching Hub has developed a Quiz Builder Tool designed to simplify the process of creating quizzes for Canvas courses.
+          <br><br>
+          To begin, download and complete the quiz template by clicking on the template button below. Fill out the template with your quiz content and submit to the Quiz Builder Tool. Once submitted, the tool automatically converts this information into a format compatible with Canvas, facilitating the rapid development of a question bank for quizzes and exams.
+          <br><br>       
+          For those seeking inspiration or assistance in question creation, EdPlus provides an <a href="https://urldefense.com/v3/__https://asuo-question-generator.streamlit.app/__;!!IKRxdwAv5BmarQ!c7pNpEyBxwDalDxDt2E8fu3fh-odi1ECAb9BylrTedUD0Ysh-_FlOUdmVJfTg2Mh4OWIgL9lBGyUvEDvgms57g$">AI Assessment Question Generator</a>, which can offer suggested quiz questions based on your specific course objectives. The document provided by the AI Assessment Question Generator is compatible with the Quiz Builder Tool.
+          <br><br>
+          It is recommended to review the accuracy of the conversion in Canvas to ensure the integrity of the assessment before it is administered to students. Please see the Q&A section below for more information on the capabilities and limitations of this tool.
+          
+      </p>
+      <div id="tutorial-button">
+          <button class="button" id="tutorial">STEP BY STEP TUTORIAL</button>
+      </div>
+      <div id="tutorial-section">
+          <h3><b>Video Introduction</b></h3>
+          <p id="description"> <b>This video will give you a brief intriduction to the Quiz Builder Tool</b></p>
+          <iframe width="100%" height="800px" src="https://www.youtube.com/embed/K4TOrB7at0Y?si=FfUMlgKyETGQ8X71" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>   
+      </div>
+      <div id="tutorial-button">
+          <button class="button" id="downloadTemplate" onclick="generate()">DOWNLOAD QUIZ TEMPLATE</button>
+          <input type="file" id="fileUploads">
+          <button class="button" id="downloadQTI">DOWNLOAD QUIZ QTI</button>
+      </div>
+      <div id="questionsContainer">
+          <h3><b>Q&A:</b></h3>
+          <div id="questions">
+              <p id="question">What kinds of questions can be included in this format?</p>
+              <p id="question">What can’t the quiz builder do?</p>
+          </div>
+      </div>
+  </div>
+  
+    
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="js/main.js"></script>    
+    
+</body>
+
+</html>
